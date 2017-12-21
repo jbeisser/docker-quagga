@@ -11,6 +11,8 @@ COPY files/bgpd.conf /config
 COPY files/zebra.conf /config
 COPY files/s6-zebra-run /etc/s6/zebra/run
 COPY files/s6-bgpd-run /etc/s6/bgpd/run
+COPY files/s6-zebra-finish /etc/s6/zebra/finish
+COPY files/s6-zebra-finish /etc/s6/bgpd/finish
 RUN set -ex; \
 apk update && apk add --no-cache \
 su-exec \
