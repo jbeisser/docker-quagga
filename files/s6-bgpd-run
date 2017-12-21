@@ -1,0 +1,2 @@
+#!/bin/sh
+exec bgpd -f /config/bgpd.conf
